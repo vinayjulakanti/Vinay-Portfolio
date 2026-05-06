@@ -21,6 +21,7 @@ script.js         - Website interactions and animations
 resume.html       - Additional resume page
 resume.pdf        - Downloadable resume
 resume_image.png  - Resume preview image
+assets/ivr-logo.png - IVR project logo
 README.md         - Project documentation
 ```
 
