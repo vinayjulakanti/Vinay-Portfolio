@@ -1,40 +1,111 @@
-# Portfolio Website
+# Julakanti Vinay Kumar Portfolio
 
-This is a personal portfolio website for Julakanti Vinay Kumar.
+This is a personal portfolio website developed for showcasing my skills, projects, education, certifications, and contact information.
 
-## Overview
+## 🚀 Overview
 
 - Built using HTML, CSS, and JavaScript
-- Includes sections for About, Education, Skills, Projects, Certifications, and Contact
-- Contains interactive buttons and a resume preview modal
-- Includes links to GitHub projects and contact options
+- Responsive and modern portfolio design
+- Includes About, Education, Skills, Projects, Certifications, and Contact sections
+- Interactive buttons and resume preview modal
+- GitHub project links and contact options included
 
-## Files
+---
 
-- `index.html` - main website page
-- `style.css` - site styling
-- `script.js` - page interactions and resume modal behavior
-- `resume.html` - additional resume page
-- `resume.pdf` - downloadable resume
-- `resume_image.png` - resume preview image
+## 📂 Project Files
 
-## How to use
+```bash
+index.html        - Main website page
+style.css         - Website styling
+script.js         - Website interactions and animations
+resume.html       - Additional resume page
+resume.pdf        - Downloadable resume
+resume_image.png  - Resume preview image
+README.md         - Project documentation
+```
 
-1. Open `index.html` in a web browser.
-2. Use the navigation links to jump to various sections.
-3. Click `View Resume` to preview the resume image.
-4. Use the `Contact Me` section to view contact cards and submit a message.
+---
 
-## Deployment
+## 🛠️ Technologies Used
 
-To deploy this site, you can use GitHub Pages or any static site hosting provider.
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
 
-### GitHub Pages
+---
 
-1. Push the repository to GitHub.
-2. In the repository settings, enable GitHub Pages from the `main` branch.
-3. The site will be published at `https://<your-github-username>.github.io/<repository-name>/`.
+## 💻 Features
 
-## License
+- Responsive Design
+- Smooth Navigation
+- Resume Preview
+- Project Showcase
+- Contact Section
+- Modern UI Design
 
-This repository is provided as-is.
+---
+
+## 📌 Projects Included
+
+### Learning Management System
+A full-stack LMS with authentication, course management, assignments, and grading features.
+
+### Waste Sorting Assistant
+AI-powered recyclable material detection system with multilingual support.
+
+### Conversational IVR Middleware
+Developed during Infosys Springboard internship using speech-to-text and text-to-speech technologies.
+
+---
+
+## 🎓 Education
+
+- B.Tech CSE (AIML) — Mohan Babu University
+- Intermediate — Amaravati Junior College
+- SSC — ViswaBharathi English Medium High School
+
+---
+
+## 📜 Certifications
+
+- Artificial Intelligence Primer — Infosys Springboard
+- Oracle Cloud Infrastructure 2025 Certified Generative AI Professional
+- Principles of Generative AI — Infosys Springboard
+
+---
+
+## 📞 Contact
+
+- Email: vinayjulakanti123@gmail.com
+- LinkedIn: https://www.linkedin.com/in/vinay-kumar-julakanti/
+- GitHub: https://github.com/vinayjulakanti
+
+---
+
+## 🌐 Deployment
+
+This project can be deployed using GitHub Pages or any static hosting provider.
+
+### GitHub Pages Deployment
+
+1. Push repository to GitHub
+2. Open repository settings
+3. Enable GitHub Pages from the `main` branch
+4. Access the live website using:
+
+```bash
+https://<your-github-username>.github.io/<repository-name>/
+```
+
+---
+
+## ⭐ Author
+
+Developed by **Julakanti Vinay Kumar**
+
+---
+
+## 📄 License
+
+This project is provided as-is for educational and personal portfolio purposes.
