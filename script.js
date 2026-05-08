@@ -76,7 +76,7 @@ if (viewResumeBtn && resumeModal && resumeClose && resumeBackdrop) {
 }
 
 // Certificate modal functionality
-const internshipCertCard = document.getElementById("internshipCertCard");
+const showCertBtn = document.querySelector(".show-cert-btn");
 const certModal = document.getElementById("certModal");
 const certClose = document.getElementById("certClose");
 const certBackdrop = document.getElementById("certBackdrop");
@@ -86,18 +86,16 @@ const certDownloadBtn = document.getElementById("certDownloadBtn");
 const certOpenBtn = document.getElementById("certOpenBtn");
 const certImage = document.getElementById("certImage");
 
-if (internshipCertCard && certModal && certClose && certBackdrop && certModalTitle && certModalSubtitle && certDownloadBtn && certOpenBtn && certImage) {
+if (showCertBtn && certModal && certClose && certBackdrop && certModalTitle && certModalSubtitle && certDownloadBtn && certOpenBtn && certImage) {
   const openCertModal = () => {
-    const certSrc = internshipCertCard.dataset.certSrc;
-    const certTitle = internshipCertCard.dataset.certTitle;
-    const certSubtitle = internshipCertCard.dataset.certSubtitle;
+    const certSrc = showCertBtn.dataset.certSrc;
 
-    certModalTitle.textContent = certTitle;
-    certModalSubtitle.textContent = certSubtitle;
+    certModalTitle.textContent = "Internship Certificate";
+    certModalSubtitle.textContent = "Infosys Springboard";
     certDownloadBtn.href = certSrc;
     certOpenBtn.href = certSrc;
     certImage.src = certSrc;
-    certImage.alt = `${certTitle} preview`;
+    certImage.alt = "Internship Certificate preview";
 
     certModal.classList.add("open");
     certModal.setAttribute("aria-hidden", "false");
@@ -108,13 +106,7 @@ if (internshipCertCard && certModal && certClose && certBackdrop && certModalTit
     certModal.setAttribute("aria-hidden", "true");
   };
 
-  internshipCertCard.addEventListener("click", openCertModal);
-  internshipCertCard.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      openCertModal();
-    }
-  });
+  showCertBtn.addEventListener("click", openCertModal);
 
   certClose.addEventListener("click", closeCertModal);
   certBackdrop.addEventListener("click", closeCertModal);
