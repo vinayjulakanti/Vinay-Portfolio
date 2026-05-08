@@ -80,27 +80,28 @@
     </div>
   </div>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-
-    <h2 class="section-title">
-      About <span>Me</span>
-    </h2>
-
-    <div class="about">
-
-      <div class="about-left">
-        <div class="about-hero">
-          <div class="about-hero-inner">
-            <span class="about-hero-icon">👨‍💻</span>
-          </div>
+  <div class="resume-modal" id="certModal" aria-hidden="true">
+    <div class="resume-modal-backdrop" id="certBackdrop"></div>
+    <div class="resume-modal-content">
+      <div class="resume-modal-header">
+        <div>
+          <h3 id="certModalTitle">Certificate Preview</h3>
+          <p id="certModalSubtitle">Preview the certificate directly in the portfolio</p>
         </div>
-        <div class="about-stats">
-          <div class="about-stat-card">
-            <h2>9.27</h2>
-            <p>CGPA</p>
-          </div>
-          <div class="about-stat-card">
+        <button class="resume-close" id="certClose" aria-label="Close certificate viewer">×</button>
+      </div>
+      <div class="resume-modal-toolbar">
+        <span class="resume-toolbar-pill" id="certToolbarLabel">Certificate Preview</span>
+        <div class="resume-toolbar-actions">
+          <a id="certDownloadBtn" href="./assets/internship-certificate.png" download class="btn secondary">Download</a>
+          <a id="certOpenBtn" href="./assets/internship-certificate.png" target="_blank" rel="noopener noreferrer" class="btn outline">Open in new tab</a>
+        </div>
+      </div>
+      <div class="resume-frame-wrapper">
+        <img src="./assets/internship-certificate.png" id="certImage" class="resume-frame" alt="Certificate preview" />
+      </div>
+    </div>
+  </div>
             <h2>100%</h2>
             <p>SSC SCORE</p>
           </div>
@@ -359,13 +360,13 @@
         </div>
       </div>
 
-      <a href="./assets/internship-certificate.png" target="_blank" class="cert-card">
+      <div class="cert-card cert-card-clickable" id="internshipCertCard" role="button" tabindex="0" data-cert-src="./assets/internship-certificate.png" data-cert-title="Internship Certificate" data-cert-subtitle="Infosys Springboard">
         <div class="cert-icon">🏆</div>
         <div class="cert-content">
           <h3>Internship Certificate</h3>
           <p>Infosys Springboard</p>
         </div>
-      </a>
+      </div>
 
       <div class="cert-card">
         <div class="cert-icon">�🎯</div>

@@ -510,6 +510,14 @@ nav{
   box-shadow:0 20px 50px rgba(33,95,255,0.08);
 }
 
+.cert-card-clickable{
+  cursor:pointer;
+}
+
+.cert-card-clickable:focus-visible{
+  outline:3px solid rgba(40,109,241,0.4);
+}
+
 .cert-icon{
   width:60px;
   height:60px;

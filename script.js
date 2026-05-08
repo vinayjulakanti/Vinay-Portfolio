@@ -74,3 +74,55 @@ if (viewResumeBtn && resumeModal && resumeClose && resumeBackdrop) {
     }
   });
 }
+
+// Certificate modal functionality
+const internshipCertCard = document.getElementById("internshipCertCard");
+const certModal = document.getElementById("certModal");
+const certClose = document.getElementById("certClose");
+const certBackdrop = document.getElementById("certBackdrop");
+const certModalTitle = document.getElementById("certModalTitle");
+const certModalSubtitle = document.getElementById("certModalSubtitle");
+const certDownloadBtn = document.getElementById("certDownloadBtn");
+const certOpenBtn = document.getElementById("certOpenBtn");
+const certImage = document.getElementById("certImage");
+
+if (internshipCertCard && certModal && certClose && certBackdrop && certModalTitle && certModalSubtitle && certDownloadBtn && certOpenBtn && certImage) {
+  const openCertModal = () => {
+    const certSrc = internshipCertCard.dataset.certSrc;
+    const certTitle = internshipCertCard.dataset.certTitle;
+    const certSubtitle = internshipCertCard.dataset.certSubtitle;
+
+    certModalTitle.textContent = certTitle;
+    certModalSubtitle.textContent = certSubtitle;
+    certDownloadBtn.href = certSrc;
+    certOpenBtn.href = certSrc;
+    certImage.src = certSrc;
+    certImage.alt = `${certTitle} preview`;
+
+    certModal.classList.add("open");
+    certModal.setAttribute("aria-hidden", "false");
+  };
+
+  const closeCertModal = () => {
+    certModal.classList.remove("open");
+    certModal.setAttribute("aria-hidden", "true");
+  };
+
+  internshipCertCard.addEventListener("click", openCertModal);
+  internshipCertCard.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openCertModal();
+    }
+  });
+
+  certClose.addEventListener("click", closeCertModal);
+  certBackdrop.addEventListener("click", closeCertModal);
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && certModal.classList.contains("open")) {
+      closeCertModal();
+    }
+  });
+}
+
