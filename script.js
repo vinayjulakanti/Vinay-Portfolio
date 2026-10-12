@@ -125,4 +125,3 @@ if (internshipCertCard && certModal && certClose && certBackdrop && certModalTit
     }
   });
 }
-

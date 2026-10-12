@@ -710,6 +710,12 @@ nav{
   margin-top:0.5rem;
 }
 
+.form-note{
+  margin-top:0.75rem;
+  color:var(--muted);
+  font-size:0.9rem;
+}
+
 /* RESUME VIEWER */
 .resume-modal{
   position:fixed;
